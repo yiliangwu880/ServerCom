@@ -14,11 +14,27 @@ DEFINE_bool(daemon, true, "bool parameter");
 
 DEFINE_double(ratio, 1.05, "double parameter");
 
+static bool ValidateStringFlags(const char* name, int value)
+{
+	if (std::string("port") == name)
+	{
+	}
+	return true; //返回flase不能启动
+}
 
 int main(int argc, char* argv[]) 
 {
 	printf("hello world\n");
 	LOG_DEBUG("hello");
+
+
+	const char *p = R"xxx(Usage:
+		我的说明
+		)xxx";
+	google::SetVersionString(std::string("1.10"));
+	google::SetUsageMessage(std::string(p));
+	google::RegisterFlagValidator(&FLAGS_port, &ValidateStringFlags);//必须设置参数，不然启动不了
+
 
 	gflags::ParseCommandLineFlags(&argc, &argv, true);//参数解析, true表示不保留定义的flags
 
