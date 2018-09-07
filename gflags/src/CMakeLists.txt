@@ -3,6 +3,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6) #cmake最低版本需求，不加入此行�
 PROJECT(HELLO) #项目名称　　
 
 INCLUDE_DIRECTORIES(system ${PROJECT_SOURCE_DIR}/../dep/gflags/include/)
+INCLUDE_DIRECTORIES(system ${PROJECT_SOURCE_DIR}/../dep/SimpleIni/)
 
 # lib directories
 LINK_DIRECTORIES(
