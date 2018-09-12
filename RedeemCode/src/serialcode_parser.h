@@ -68,11 +68,11 @@ public:
 	}
 
 	//根据 功能id+唯一码 生成兑换码, 唯一码可以按顺序传入，返回的码看不出顺序
+	//失败返回 ""
 	std::string CreateRedeemCode(uint32_t fun_id, uint32_t unique_code);
 	//检查一个码是否合法
 	bool CheckCodeValid(const std::string &code);
 	uint32_t GetFunId(const std::string &code);
-
 
 private:
 	//return true表示配置 RedeemCodeCfg 定义ok
@@ -83,9 +83,10 @@ private:
 	std::string Uint64ToCode(uint64_t src);
 };
 
+//兑换码输出文件给运营
 class RedeemCodeTool
 {
-	const char *CreateHistoryFile = "history.txt";
+	const char *HISTORY_FILE = "history.txt";
 	RedeemCodeTool();
 public:
 	static RedeemCodeTool &Instance()
@@ -93,14 +94,18 @@ public:
 		static RedeemCodeTool obj;
 		return obj;
 	}
+	//命令行执行run
+	//格式： fun_id create_num
+	void Run(int argc, char* argv[]);
 
-	//生成兑换码
+	//生成兑换码,输出文件，保存历史文件
 	//
 	//return true 表示执行成功，false没任何改变.
 	bool run(uint32_t fun_id, uint32_t create_num);
 
 
 private:
-   	
+	//para uin_code_idx 开始使用的序列号, 0开始。
+	bool run(uint32_t fun_id, uint32_t create_num, uint32_t uin_code_idx);
 
 };

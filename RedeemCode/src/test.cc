@@ -8,9 +8,9 @@ struct FunId_Uin
 {
 	uint32_t fun_id, uin_code;
 };
-
-void test()
+void testRedeemCodeMgr()
 {
+
 	{//主流程
 		FunId_Uin ar[] = {
 			{ 1, 1 },
@@ -38,7 +38,18 @@ void test()
 	ASSERT_DEBUG("" != RedeemCodeMgr::Instance().CreateRedeemCode(RedeemCodeCfg::FUN_ID_MAX, 1));
 	//fun_id超出范围
 	ASSERT_DEBUG("" == RedeemCodeMgr::Instance().CreateRedeemCode(RedeemCodeCfg::FUN_ID_MAX + 1, 1));
-	ASSERT_DEBUG("" == RedeemCodeMgr::Instance().CreateRedeemCode(RedeemCodeCfg::FUN_ID_MAX, RedeemCodeCfg::UNIQUE_CODE_MAX+1));
+	ASSERT_DEBUG("" == RedeemCodeMgr::Instance().CreateRedeemCode(RedeemCodeCfg::FUN_ID_MAX, RedeemCodeCfg::UNIQUE_CODE_MAX + 1));
 	//RedeemCode::Instance().
-	}
+}
+
+}
+
+void testRedeemCodeTool()
+{
+	RedeemCodeTool::Instance().run(2, 3); 
+}
+void test()
+{
+	testRedeemCodeMgr();
+	testRedeemCodeTool();
 }
