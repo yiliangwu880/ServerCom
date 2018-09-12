@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="external">
+      <UniqueIdentifier>{2839F3DC-1406-4EE8-3D1F-3C90294B8376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\include">
+      <UniqueIdentifier>{9B081B03-8701-3A55-B033-1FDA9C8B1961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\include\event2">
+      <UniqueIdentifier>{FEAB5847-6AE3-A0DE-73ED-0402DFA3C7D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib_prj">
+      <UniqueIdentifier>{C74D6279-332D-E114-3C45-6CEBA8A34776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib_prj\src">
+      <UniqueIdentifier>{5E97EDD9-CA4C-66CF-5341-60A6BFF55CD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib_prj\test">
+      <UniqueIdentifier>{B6DAA017-A23D-30BC-4BC3-68723705FC3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib_prj\utility">
+      <UniqueIdentifier>{2A7BCE5A-9606-3C1F-9F17-BF130B22981F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\include\event2\buffer.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\buffer_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\bufferevent.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\bufferevent_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\bufferevent_ssl.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\bufferevent_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\dns.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\dns_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\dns_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\event-config.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\event.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\event_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\event_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\http.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\http_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\http_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\keyvalq_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\listener.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\rpc.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\rpc_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\rpc_struct.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\tag.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\tag_compat.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\thread.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\event2\util.h">
+      <Filter>external\include\event2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\connector.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\etcd_client.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\http.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\include_all.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\lev_mgr.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\listener.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\src\vtime.h">
+      <Filter>lib_prj\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\timer_mgr.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\BacktraceInfo.hpp">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\config.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\linux_simulate_def.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\logFile.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\mem_pool.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\misc.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\single_progress.hpp">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\stlBoost.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\utility\typedef.h">
+      <Filter>lib_prj\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib_prj\connector.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\etcd_client.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\http.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\lev_mgr.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\listener.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\src\vtime.cc">
+      <Filter>lib_prj\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\test\test_client.cc">
+      <Filter>lib_prj\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\test\test_httpclient.cc">
+      <Filter>lib_prj\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\test\test_httpsvr.cc">
+      <Filter>lib_prj\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\test\test_server.cc">
+      <Filter>lib_prj\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\timer_mgr.cc">
+      <Filter>lib_prj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\utility\BacktraceInfo.cpp">
+      <Filter>lib_prj\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\utility\logFile.cpp">
+      <Filter>lib_prj\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib_prj\utility\single_progress.cpp">
+      <Filter>lib_prj\utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

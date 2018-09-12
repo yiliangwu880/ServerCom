@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib_prj">
+      <UniqueIdentifier>{C74D6279-332D-E114-3C45-6CEBA8A34776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main_prj">
+      <UniqueIdentifier>{F527763B-E1F4-D046-0A0E-BFEEF63906D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\lib_prj\connector.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\etcd_client.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\http.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\include_all.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\lev_mgr.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\listener.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib_prj\timer_mgr.h">
+      <Filter>lib_prj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main_prj\stdafx.h">
+      <Filter>main_prj</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\main_prj\main.cc">
+      <Filter>main_prj</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

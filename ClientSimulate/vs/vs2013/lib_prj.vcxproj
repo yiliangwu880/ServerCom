@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C74D6279-332D-E114-3C45-6CEBA8A34776}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lib_prj</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Debug\</OutDir>
+    <IntDir>obj\Debug\lib_prj\</IntDir>
+    <TargetName>lib_prj</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\include\event2\buffer.h" />
+    <ClInclude Include="..\..\external\include\event2\buffer_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\bufferevent.h" />
+    <ClInclude Include="..\..\external\include\event2\bufferevent_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\bufferevent_ssl.h" />
+    <ClInclude Include="..\..\external\include\event2\bufferevent_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\dns.h" />
+    <ClInclude Include="..\..\external\include\event2\dns_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\dns_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\event-config.h" />
+    <ClInclude Include="..\..\external\include\event2\event.h" />
+    <ClInclude Include="..\..\external\include\event2\event_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\event_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\http.h" />
+    <ClInclude Include="..\..\external\include\event2\http_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\http_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\keyvalq_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\listener.h" />
+    <ClInclude Include="..\..\external\include\event2\rpc.h" />
+    <ClInclude Include="..\..\external\include\event2\rpc_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\rpc_struct.h" />
+    <ClInclude Include="..\..\external\include\event2\tag.h" />
+    <ClInclude Include="..\..\external\include\event2\tag_compat.h" />
+    <ClInclude Include="..\..\external\include\event2\thread.h" />
+    <ClInclude Include="..\..\external\include\event2\util.h" />
+    <ClInclude Include="..\..\lib_prj\connector.h" />
+    <ClInclude Include="..\..\lib_prj\etcd_client.h" />
+    <ClInclude Include="..\..\lib_prj\http.h" />
+    <ClInclude Include="..\..\lib_prj\include_all.h" />
+    <ClInclude Include="..\..\lib_prj\lev_mgr.h" />
+    <ClInclude Include="..\..\lib_prj\listener.h" />
+    <ClInclude Include="..\..\lib_prj\src\vtime.h" />
+    <ClInclude Include="..\..\lib_prj\timer_mgr.h" />
+    <ClInclude Include="..\..\lib_prj\utility\BacktraceInfo.hpp" />
+    <ClInclude Include="..\..\lib_prj\utility\config.h" />
+    <ClInclude Include="..\..\lib_prj\utility\linux_simulate_def.h" />
+    <ClInclude Include="..\..\lib_prj\utility\logFile.h" />
+    <ClInclude Include="..\..\lib_prj\utility\mem_pool.h" />
+    <ClInclude Include="..\..\lib_prj\utility\misc.h" />
+    <ClInclude Include="..\..\lib_prj\utility\single_progress.hpp" />
+    <ClInclude Include="..\..\lib_prj\utility\stlBoost.h" />
+    <ClInclude Include="..\..\lib_prj\utility\typedef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lib_prj\connector.cc" />
+    <ClCompile Include="..\..\lib_prj\etcd_client.cc" />
+    <ClCompile Include="..\..\lib_prj\http.cc" />
+    <ClCompile Include="..\..\lib_prj\lev_mgr.cc" />
+    <ClCompile Include="..\..\lib_prj\listener.cc" />
+    <ClCompile Include="..\..\lib_prj\src\vtime.cc" />
+    <ClCompile Include="..\..\lib_prj\test\test_client.cc" />
+    <ClCompile Include="..\..\lib_prj\test\test_httpclient.cc" />
+    <ClCompile Include="..\..\lib_prj\test\test_httpsvr.cc" />
+    <ClCompile Include="..\..\lib_prj\test\test_server.cc" />
+    <ClCompile Include="..\..\lib_prj\timer_mgr.cc" />
+    <ClCompile Include="..\..\lib_prj\utility\BacktraceInfo.cpp" />
+    <ClCompile Include="..\..\lib_prj\utility\logFile.cpp" />
+    <ClCompile Include="..\..\lib_prj\utility\single_progress.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
