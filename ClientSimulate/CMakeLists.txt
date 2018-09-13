@@ -13,6 +13,7 @@ INCLUDE(cotire)
 
 # include directories
 INCLUDE_DIRECTORIES(system ./external/include/)
+INCLUDE_DIRECTORIES(system ./external/)
 INCLUDE_DIRECTORIES(after  ${PROJECT_SOURCE_DIR})
 
 #运行cmake输出终端消息，调试可以用
